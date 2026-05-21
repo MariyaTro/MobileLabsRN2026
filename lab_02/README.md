@@ -1,11 +1,111 @@
-# Sample Snack app
+# Лабораторна робота №2  
+## Побудова вкладеної навігації та оптимізація відображення великих списків у React Native
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+---
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+# Тема роботи
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+Побудова вкладеної навігації та оптимізація відображення великих списків у React Native із використанням компонентів FlatList та SectionList.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+---
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+# Мета роботи
+
+- ознайомлення з принципами навігації у React Native;
+- вивчення вкладеної навігації;
+- використання Drawer Navigator та Stack Navigator;
+- передача параметрів між екранами;
+- робота з FlatList та SectionList;
+- вивчення механізму віртуалізації списків;
+- оптимізація продуктивності застосунку.
+
+---
+
+# Опис проєкту
+
+У межах лабораторної роботи було створено мобільний застосунок новин із використанням вкладеної навігації та оптимізованих списків.
+
+Застосунок містить:
+
+- Drawer Navigator (бокове меню);
+  <img width="328" height="172" alt="image" src="https://github.com/user-attachments/assets/1dd81ea0-3cb8-441c-a5c4-4d3b359795d4" />
+  
+- Stack Navigator;
+    <img width="336" height="709" alt="image" src="https://github.com/user-attachments/assets/163ce320-a46e-4508-b204-4885c4aafb62" />
+
+- список новин на FlatList;
+  <img width="340" height="777" alt="image" src="https://github.com/user-attachments/assets/1df4ae97-89ee-489d-9efc-f2a48be165a2" />
+
+- екран деталей новини;
+  <img width="350" height="780" alt="image" src="https://github.com/user-attachments/assets/558a9a24-f71d-428d-8576-aa56f523df7a" />
+
+- екран контактів на SectionList;
+  <img width="346" height="838" alt="image" src="https://github.com/user-attachments/assets/120ea7c0-7a6d-413f-a30f-6685940365b2" />
+
+- кастомне Drawer Menu;
+  <img width="367" height="783" alt="image" src="https://github.com/user-attachments/assets/223fe2b7-15ea-4288-8a54-1ccfb938238b" />
+
+- Pull-to-Refresh;
+  Оновлення списку новин жестом прокручування вниз.
+- Infinite Scroll;
+  <img width="350" height="774" alt="image" src="https://github.com/user-attachments/assets/00600503-ec2a-44cb-8958-38c8e5b37727" />
+
+- передачу параметрів між екранами;
+- оптимізацію рендерингу списків.
+
+---
+
+# Використані технології
+
+- React Native
+- Expo
+- React Navigation
+- Drawer Navigator
+- Native Stack Navigator
+- FlatList
+- SectionList
+
+---
+
+# Середовище розробки
+
+Для виконання лабораторної роботи локальне середовище React Native та Android Studio не встановлювались.
+
+Розробка та тестування застосунку виконувались виключно в онлайн-середовищі:
+
+https://snack.expo.dev/
+
+Причини використання Snack Expo:
+- швидкий запуск React Native застосунку;
+- відсутність необхідності локального налаштування;
+- підтримка Expo;
+- можливість тестування через Expo Go.
+
+Тестування застосунку виконувалось:
+- у браузері через Snack Expo;
+
+---
+
+# Контрольні запитання
+1. Чим відрізняється FlatList від ScrollView?
+ScrollView рендерить одразу всі елементи списку, що може негативно впливати на продуктивність при великих об’ємах даних.
+FlatList використовує віртуалізацію — відображаються лише видимі елементи, що значно оптимізує використання пам’яті та продуктивність.
+
+2. Що таке віртуалізація списків?
+Віртуалізація — це механізм, при якому рендеряться лише видимі елементи списку, а невидимі автоматично видаляються або перевикористовуються.
+
+3. Як здійснюється передача параметрів між екранами?
+Передача параметрів здійснюється через navigation.navigate():
+
+4. Що таке вкладена навігація?
+Вкладена навігація — це структура, у якій один навігатор містить інший.
+
+5. У яких випадках застосовується SectionList?
+SectionList використовується для відображення групованих даних, коли елементи потрібно поділити на категорії або секції.
+
+# Висновок
+
+У результаті виконання лабораторної роботи було створено мобільний застосунок на React Native з використанням вкладеної навігації. 
+У процесі роботи було реалізовано Drawer Navigator та Stack Navigator, передачу параметрів між екранами, список новин на базі FlatList та екран контактів із використанням SectionList. 
+Також було досліджено механізм віртуалізації списків та застосовано оптимізацію рендерингу для покращення продуктивності застосунку. Окрім цього, реалізовано Pull-to-Refresh, Infinite Scroll та кастомне бокове меню. 
+Під час виконання роботи були отримані практичні навички створення мобільних застосунків у React Native та роботи з Expo.
