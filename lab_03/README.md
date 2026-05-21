@@ -1,11 +1,190 @@
-# Sample Snack app
+/># Лабораторна робота №3  
+## Використання кастомних жестів у React Native та стилізація інтерфейсу мобільного застосунку
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+---
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+# Тема роботи
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+Використання кастомних жестів у React Native та стилізація інтерфейсу мобільного застосунку.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+---
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+# Мета роботи
+
+Метою лабораторної роботи є набуття практичних навичок роботи з жестами користувача у React Native, реалізація взаємодії з елементами інтерфейсу через різні типи жестів, а також застосування сучасного підходу до стилізації мобільного застосунку.
+
+---
+
+# Опис проєкту
+
+У межах лабораторної роботи було створено мобільний застосунок у форматі гри-клікера. Користувач взаємодіє з об’єктом на головному екрані за допомогою різних жестів, отримує бали та виконує завдання.
+
+Застосунок містить:
+
+- головний екран гри;
+- лічильник балів;
+- інтерактивний об’єкт для взаємодії;
+- екран зі списком завдань;
+- екран налаштувань;
+- підтримку світлої та темної теми;
+- навігацію між екранами.
+
+---
+
+# Використані технології
+
+- React Native
+- Expo
+- React Navigation
+- React Native Gesture Handler
+- Styled Components
+
+---
+
+# Середовище розробки
+
+Для виконання лабораторної роботи локальне середовище React Native та Android Studio не встановлювались.
+
+Розробка та тестування застосунку виконувались виключно в онлайн-середовищі:
+
+https://snack.expo.dev/
+
+Тестування застосунку виконувалось:
+- у браузері через Snack Expo;
+- на фізичному Android-пристрої через Expo Go.
+
+---
+
+# Реалізований функціонал
+
+## Головний екран
+
+На головному екрані реалізовано гру-клікер. Користувач може взаємодіяти з об’єктом за допомогою різних жестів. За кожну дію нараховуються бали, які відображаються у лічильнику.
+
+---
+
+## Використані жести
+
+У застосунку реалізовано такі жести:
+
+- TapGestureHandler — одинарне натискання для отримання 1 бала;
+- TapGestureHandler — подвійне натискання для отримання 2 балів;
+- LongPressGestureHandler — утримання об’єкта протягом 3 секунд для отримання бонусних балів;
+- PanGestureHandler — перетягування об’єкта по екрану;
+- FlingGestureHandler — свайп вправо або вліво для отримання випадкової кількості балів;
+- PinchGestureHandler — зміна розміру об’єкта.
+
+---
+
+## Сторінка завдань
+
+На сторінці завдань відображається список цілей гри та їхній статус.
+
+Реалізовані завдання:
+
+- зробити 10 кліків;
+- зробити подвійний клік 5 разів;
+- утримувати об’єкт 3 секунди;
+- перетягнути об’єкт;
+- зробити свайп вправо;
+- зробити свайп вліво;
+- змінити розмір об’єкта;
+- отримати 100 балів;
+- власне завдання: отримати 200 балів.
+
+Кожне завдання має статус:
+- `Виконано`;
+- `Не виконано`.
+
+---
+
+## Сторінка налаштувань
+
+На сторінці налаштувань реалізовано перемикання теми інтерфейсу. Користувач може змінювати тему застосунку зі світлої на темну та навпаки.
+
+---
+
+## Навігація
+
+Для переходу між екранами використано `@react-navigation/native` та `createNativeStackNavigator`.
+
+У застосунку є три екрани:
+
+- Гра;
+- Завдання;
+- Налаштування.
+
+---
+
+## Стилізація
+
+Для стилізації інтерфейсу використано бібліотеку `styled-components/native`.
+
+За допомогою стилізованих компонентів реалізовано:
+
+- основний контейнер екрана;
+ <img width="347" height="827" alt="image" src="https://github.com/user-attachments/assets/f54fc227-edaa-44e8-8099-be431a350c8e" />
+ 
+- заголовки;
+- кнопки;
+  
+  <img width="338" height="713" alt="image" src="https://github.com/user-attachments/assets/3a94e58d-8a46-4710-9865-dc814dd095be" />
+  
+- картки завдань;
+- 
+  <img width="331" height="717" alt="image" src="https://github.com/user-attachments/assets/bacb75d5-d47a-4119-8019-06ed6e5fae99" />
+  
+- статуси виконання;
+
+  <img width="336" height="724" alt="image" src="https://github.com/user-attachments/assets/49ee4a26-3235-4fd1-95df-18686e858902" />
+
+- світлу та темну тему.
+  <img width="335" height="730" alt="image" src="https://github.com/user-attachments/assets/3548def6-2f63-43d0-aad8-107d24bc2b51" />
+  
+  <img width="336" height="720" alt="image" src="https://github.com/user-attachments/assets/2656b254-6bfc-4915-9416-f77f2316e9fb" />
+
+---
+
+# Запуск проєкту
+
+## 1. Відкрити Snack Expo
+
+Перейти за посиланням:
+
+https://snack.expo.dev/
+
+---
+
+## 2. Створити новий проєкт
+
+У середовищі Snack Expo створити новий React Native проєкт.
+
+---
+
+## 3. Додати код
+
+Скопіювати код застосунку в файл `App.js`.
+
+---
+
+## 4. Додати залежності
+
+У Snack Expo потрібно додати такі залежності:
+
+```bash
+@react-navigation/native
+@react-navigation/native-stack
+react-native-gesture-handler
+styled-components
+```
+---
+
+# Висновок
+
+У результаті виконання лабораторної роботи було створено мобільний застосунок на React Native у форматі гри-клікера.
+У застосунку реалізовано взаємодію користувача з об’єктом за допомогою різних жестів, зокрема натискання, подвійного натискання, довгого утримання, перетягування, свайпів та масштабування.
+Також було реалізовано систему нарахування балів, сторінку із завданнями та відображенням їхнього статусу, навігацію між екранами і сторінку налаштувань.
+Для стилізації інтерфейсу використано Styled Components, а також додано підтримку світлої та темної теми. Під час виконання роботи були закріплені навички роботи з React Native, Expo, React Navigation та React Native Gesture Handler.
+
+
+
