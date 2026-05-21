@@ -1,11 +1,80 @@
-# Sample Snack app
+# Лабораторна робота №1  
+## Використання Expo для створення найпростішого додатку React Native
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+### Тема
+Використання Expo для створення найпростішого додатку React Native. Знайомство з основними компонентами.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+---
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## Мета роботи
+Навчитися:
+- створювати та налаштовувати React Native проєкт через Expo;
+- працювати зі структурою мобільного застосунку;
+- використовувати базові компоненти React Native;
+- реалізовувати навігацію між екранами;
+- запускати застосунок на емуляторі Android та фізичному пристрої.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+---
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+# Опис проєкту
+
+У межах лабораторної роботи було створено мобільний застосунок **FirstMobileApp** на React Native з використанням Expo.
+
+Застосунок містить:
+
+- головний екран із новинами;
+  
+ <img width="335" height="710" alt="image" src="https://github.com/user-attachments/assets/a47d5284-5089-4fb1-9c39-21d5ab2b50f6" />
+
+- екран фотогалереї;
+  
+ <img width="348" height="708" alt="image" src="https://github.com/user-attachments/assets/16aa1904-3e50-4b53-92d2-607346cf8dea" />
+ 
+- екран профілю/реєстрації;
+  
+  <img width="343" height="729" alt="image" src="https://github.com/user-attachments/assets/9b6dea39-5b82-4539-bac8-24bec2d909c6" />
+  
+- верхню навігацію між екранами;
+  
+  <img width="351" height="93" alt="image" src="https://github.com/user-attachments/assets/30f5f521-714d-4be8-b8e2-80958120e92a" />
+  
+- стилізацію інтерфейсу;
+  
+- адаптивний інтерфейс для мобільних пристроїв.
+  
+  <img width="376" height="695" alt="image" src="https://github.com/user-attachments/assets/15fbe30a-a257-4784-ae13-0a29a7e1ba98" />
+
+
+---
+
+# Використані технології
+
+- React Native
+- Expo
+- React Navigation
+- Material Top Tabs
+- Expo Vector Icons
+
+---
+
+# Середовище розробки
+
+Для виконання лабораторної роботи локальне середовище React Native та Android Studio не встановлювались.
+
+Розробка та тестування застосунку виконувались виключно в онлайн-середовищі:
+
+https://snack.expo.dev/
+
+Причини використання Snack Expo:
+- можливість швидкого запуску React Native застосунку без локального налаштування середовища;
+- автоматична підтримка Expo;
+- можливість тестування застосунку через Expo Go;
+- зручне редагування та перегляд результату в браузері.
+
+Тестування застосунку виконувалось:
+- у браузері через Snack Expo;
+
+---
+# Висновок
+
+У результаті виконання лабораторної роботи було створено мобільний застосунок на React Native з використанням Expo. Було освоєно базову структуру React Native проєкту, роботу з компонентами, стилізацію інтерфейсу та реалізацію навігації між екранами.
